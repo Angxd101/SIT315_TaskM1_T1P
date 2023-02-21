@@ -20,6 +20,6 @@ void loop() {
   }
   else { // If motion was not detected
     digitalWrite(LED_BUILTIN, LOW); // Turn off the LED
-    Serial.println("Motion Not Detected");
+    Serial.println("No Movement!");
   }
 }
