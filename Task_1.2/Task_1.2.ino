@@ -19,8 +19,10 @@ void motion() {
   motionDetected = digitalRead(PIR_PIN);
   if (motionDetected == HIGH) { // If motion was detected
     digitalWrite(LED_PIN, HIGH); // Turn on the LED
+    Serial.println("Motion Detected");
   }
   else { // If motion was not detected
     digitalWrite(LED_PIN, LOW); // Turn off the LED
+    Serial.println("No Movement!");
   }
 }
